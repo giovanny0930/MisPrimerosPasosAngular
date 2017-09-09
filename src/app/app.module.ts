@@ -10,6 +10,7 @@ import {MenuComponent} from './menu/menu.component';
 import {OrdersModule } from './orders/orders.module';
 import{IndexComponent}from './customers/index/index.component';
 import {AddComponent as OrderAddComponent}from './orders/add/add.component';
+import { CurrentOptionComponent } from "./current-option/current-option.component";
 
 const appRoutes:Routes =[
 
@@ -20,13 +21,15 @@ const appRoutes:Routes =[
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    CurrentOptionComponent
   ],
   imports: [
     BrowserModule,
     CustomersModule,
-    ordersmodule,
-    RouterModule 
+    OrdersModule,
+    RouterModule.forRoot(appRoutes) 
   ],
   providers: [],
   bootstrap: [AppComponent]
