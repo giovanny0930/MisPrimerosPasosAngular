@@ -1,7 +1,14 @@
-<a routerLink="customers/index">
+<!--<a routerLink="customers/index">
   Customers
   </a>
   <br/>
   <a routerLink="orders/add">
   Orders
-  </a>
+  </a> -->
+  
+
+  <button md-button [mdMenuTriggerFor]="menu">Menu</button>
+  <md-menu #menu="mdMenu">
+    <button RouterLink="customers/index" md-menu-item>Customers</button>
+    <button RouterLink="Orders/add" md-menu-item>Orders</button>
+  </md-menu>
