@@ -8,13 +8,13 @@ import { AppComponent } from './app.component';
 import {CustomersModule} from './customers/customers.module';
 import {MenuComponent} from './menu/menu.component';
 import {OrdersModule } from './orders/orders.module';
-import{IndexComponent}from './customers/index/index.component';
+import {IndexComponent}from './customers/index/index.component';
 import {AddComponent as OrderAddComponent}from './orders/add/add.component';
 import { CurrentOptionComponent } from "./current-option/current-option.component";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {
-  
+ 
   MdAutocompleteModule,  
   MdButtonModule,  
   MdButtonToggleModule,  
@@ -51,7 +51,7 @@ import {
 const appRoutes:Routes =[
 
   {path: "customers/index", component:IndexComponent},
-  {path: "orders/add", component:IndexComponent}
+  {path: "orders/add", component:OrderAddComponent}
 
 ];
 
